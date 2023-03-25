@@ -1,0 +1,101 @@
+
+.tabs-box{
+    color:#FFF;
+    /* width:300px; */
+  max-width:50rem;
+  max-height: 50rem;
+    margin:40px auto;
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+  }
+  .tabs-box .acord{
+   position:relative;
+   overflow:hidden;
+   background: linear-gradient(360deg, #E266E3 -286.11%, rgba(22, 0, 22, 0) 241.67%);
+   backdrop-filter: blur(7.5px);
+   border-radius: 15px;
+   /* padding:5px 15px; */
+   margin-block: 10px;
+  
+  
+  
+  }
+  .tabs-box .acord label{
+    position:relative;
+    z-index: 1000;
+    display:block;
+    padding:0 40px 0 0;
+  }
+  .tabs-box .acord label i{
+    display:block;
+    position:absolute;
+    top:0;
+    right:0;
+    width:40px;
+    text-align: center;
+    padding: 5px;
+  }
+  .tabs-box .acord label,
+  .tabs-box .acord label i,
+  .tabs-box .acord .accordArrow{
+      height:40px;
+      /* line-height: 20px; */
+      /* margin-top: auto; */
+  }
+  .tabs-box .acord .accordArrow{
+    position:absolute;
+    /* z-index: 1111; */
+    color: #E266E3;
+    top:0;
+    right:10px;
+    width: 20px;
+    transform: rotate(0deg);
+    text-align: center;
+    -moz-transition:all .2s linear 0s;
+    -webkit-transition:all .2s linear 0s;
+    transition:all .1s linear;
+  }
+  
+  .tabs-box .acord input{
+    display:none;
+  }
+  
+  .tabs-box .content{
+    position:relative;
+    overflow:hidden;
+    -moz-transition:height 1s linear 0s;
+    -webkit-transition: height 1s linear 0s;
+    transition: height .5s linear 0s;
+    height:0;
+    font-size:14px;
+    line-height:22px;
+    color:#e4e4e4;
+    padding-inline: 20px;
+    margin-top: 5px;
+    opacity: 0.5;
+  margin-top: 5px;
+    background: linear-gradient(  #E266E3 0%,#160016 0%);
+  
+  backdrop-filter: blur(7.5px);
+  
+  /* border-radius: 0px 0px 18px 18px; */
+  }
+  
+  .tabs-box .content span.square{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: -17px;
+    width: 20px;
+    height: 20px;
+    /* transform: rotate(45deg); */
+  }
+  .tabs-box input[type="checkbox"]:checked ~ div.content{
+    height:200px;
+    
+  }
+  
+  .tabs-box input[type="checkbox"]:checked ~ .summary .accordArrow{
+    transform: rotate(180deg);
+  }
+  
+  
